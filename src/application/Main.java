@@ -26,6 +26,7 @@ import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
 /**
  * The class-level entry point of the program which extends the Javafx Application Class
 */
@@ -85,6 +86,7 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
+	
 	/**
 	 * Takes in a URL, parses the HTML and extracts the &lt;p&gt elements, and splits the elements into an Array 
 	 * @param url The URL location to analyze
@@ -122,6 +124,7 @@ public class Main extends Application {
 		
 		return stats;
 	}
+	
 	/**
 	 * Takes in a URL and gets the top 20 elements 
 	 * @throws IOException Throws error if there is a problem getting the URL
@@ -135,6 +138,7 @@ public class Main extends Application {
 			output.setText(output.getText() + printable + "\n");
 		}
 	}
+	
 	
 	/**
 	 * The main entry point of the program which launches the Javafx Application
